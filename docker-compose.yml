@@ -1,3 +1,4 @@
+cat > docker-compose.yml <<'YAML'
 version: "2.4"
 
 services:
@@ -10,16 +11,16 @@ services:
       TZ: Asia/Shanghai
       PYTHONUNBUFFERED: "1"
 
-      BOT_TOKEN: ${BOT_TOKEN}
-      CHANNEL_USERNAME: ${CHANNEL_USERNAME}
-      CHANNEL_URL: ${CHANNEL_URL}
-      ADMIN_USER_ID: ${ADMIN_USER_ID}
+      BOT_TOKEN: "${BOT_TOKEN}"
+      CHANNEL_USERNAME: "${CHANNEL_USERNAME}"
+      CHANNEL_URL: "${CHANNEL_URL}"
+      ADMIN_USER_ID: "${ADMIN_USER_ID}"
 
-      MYSQL_HOST: ${MYSQL_HOST}
-      MYSQL_PORT: ${MYSQL_PORT}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_HOST: "${MYSQL_HOST}"
+      MYSQL_PORT: "${MYSQL_PORT}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
 
     volumes:
       - ./logs:/app/logs
@@ -31,3 +32,4 @@ services:
         max-file: "3"
 
     network_mode: bridge
+YAML
