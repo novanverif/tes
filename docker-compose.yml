@@ -9,16 +9,16 @@ services:
       - TZ=Asia/Shanghai
       - PYTHONUNBUFFERED=1
       # Telegram Bot 配置
-      - BOT_TOKEN=${8589991283:AAHax-5xTEkuGq8YwECm7Yg3q0JDLkU6mcg}
-      - CHANNEL_USERNAME=${CHANNEL_USERNAME:-pk_oa}
-      - CHANNEL_URL=${CHANNEL_URL:-https://t.me/pk_oa}
-      - ADMIN_USER_ID=${1617374407}
+      - BOT_TOKEN=${7956048066:AAHbb6kYME7ycsnn0XdCM0Y9-ksakc76dEQ}
+      - CHANNEL_USERNAME=${CHANNEL_USERNAME:-tesbot_verif}
+      - CHANNEL_URL=${CHANNEL_URL:-https://t.me/tesbot_verif}
+      - ADMIN_USER_ID=${5957445951}
       # MySQL配置
-      - MYSQL_HOST=${MYSQL_HOST:-localhost}
+      - MYSQL_HOST=${MYSQL_HOST:-134.122.1.230}
       - MYSQL_PORT=${MYSQL_PORT:-3306}
-      - MYSQL_USER=${MYSQL_USER:-tgbot_user}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE:-tgbot_verify}
+      - MYSQL_USER=${MYSQL_USER:-root}
+      - MYSQL_PASSWORD=${novan12}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-Tes_verif_vetbot}
 
     # 日志持久化
     volumes:
