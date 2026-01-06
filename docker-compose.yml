@@ -1,5 +1,5 @@
 services:
-  tgbot:
+  tes:
     build: .
     container_name: tes
     restart: unless-stopped
